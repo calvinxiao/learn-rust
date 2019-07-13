@@ -108,3 +108,29 @@ TODO 学习 rand 库
 
 `let's match!`
 
+### 0x03 [Common Programming Concepts](https://doc.rust-lang.org/book/ch03-00-common-programming-concepts.html#common-programming-concepts)
+
+出去看了下 [「RustConAsia 2019」如何高效学习Rust](https://zhuanlan.zhihu.com/p/63232238)
+
+Rust 一个特点就是编译器会找出变量可变性错误的使用，并发ownership 误用等情况，一般来说，能编译，跑起来也不会有问题了
+
+cosnt must be with type, MAX_POINTS
+
+shadowing 允许改变变量类型, mut 只能改变值
+
+有 `i128` 和 `u128`
+
+`let (x, y, z) = tup;` pattern matching
+
+tup.1 tup.2 tup.3
+
+array 内存分配到 stack
+
+function  命名用 snake case
+
+statement 和 expression 分开，`1 + 1` 是 expression，`let a = 1 + 1` 是 statement
+
+loop, while, for
+
+
+
