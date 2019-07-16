@@ -39,7 +39,7 @@
 
 脚本安装太慢，最后去官网下载了 pkg 包
 
-`println!` 但是 Rust macro
+`println!` 是 Rust macro
 
 Cargo! Cargo!
 
@@ -132,5 +132,42 @@ statement 和 expression 分开，`1 + 1` 是 expression，`let a = 1 + 1` 是 s
 
 loop, while, for
 
+### 0x04 Ownership
+
+- Each value in Rust has a variable that’s called its *owner*.
+- There can only be one owner at a time.
+- When the owner goes out of scope, the value will be dropped.
 
 
+
+- At any given time, you can have *either* one mutable reference *or* any number of immutable references.
+- References must always be valid.
+
+
+
+### 0x05 Structs
+
+```rust
+fn build_user(email: String, username: String) -> User {
+    User {
+        email,
+        username,
+        active: true,
+        sign_in_count: 1,
+    }
+}
+```
+
+javascript, javascript, javascript...
+
+```
+let user2 = User {
+    email: String::from("another@example.com"),
+    username: String::from("anotherusername567"),
+    ..user1
+};
+```
+
+cannot be partial mutable
+
+WTF is lifetime
