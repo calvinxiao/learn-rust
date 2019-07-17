@@ -171,3 +171,27 @@ let user2 = User {
 cannot be partial mutable
 
 WTF is lifetime
+
+`{}` in `println!` to use formatting known as `Display`
+
+specifier `:?` inside the curly brackets tells `println!` we want to use an output format called `Debug`
+
+`#[derive(Debug)]`
+
+self? Python?
+
+automatic referencing behavior
+
+*associated functions*, `String::from`, class methods?
+
+### 0x06 Enums
+
+```rust
+enum Option<T> {
+    Some(T),
+    None,
+}
+```
+
+[What's my Option](https://doc.rust-lang.org/std/option/enum.Option.html)
+
